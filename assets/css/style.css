@@ -433,6 +433,27 @@ html[dir="rtl"] .eyebrow {
   margin-bottom: .25rem;
 }
 
+.brochure-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: clamp(1.35rem, 3vw, 2rem);
+  background: var(--white);
+  border: 1px solid rgba(34, 92, 75, .12);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 30px rgba(23, 63, 53, .07);
+}
+
+.brochure-panel h2 {
+  margin-bottom: .35rem;
+}
+
+.brochure-panel p {
+  max-width: 62ch;
+  margin-bottom: 0;
+}
+
 .value-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -682,6 +703,7 @@ html[dir="rtl"] .eyebrow {
   }
 
   .cta-band,
+  .brochure-panel,
   .footer-bottom {
     align-items: stretch;
     flex-direction: column;
