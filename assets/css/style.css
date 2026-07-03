@@ -459,6 +459,37 @@ html[dir="rtl"] .eyebrow {
   margin-bottom: 0;
 }
 
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.team-card {
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid rgba(34, 92, 75, .12);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 30px rgba(23, 63, 53, .07);
+}
+
+.team-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  margin: 1rem 1rem .25rem;
+}
+
+.team-card p {
+  margin: 0 1rem 1.1rem;
+  color: var(--ink-500);
+  font-size: .92rem;
+}
+
 .value-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -658,6 +689,7 @@ html[dir="rtl"] .eyebrow {
   .grid--4,
   .footer-grid,
   .value-list,
+  .team-grid,
   .stats-strip {
     grid-template-columns: 1fr 1fr;
   }
@@ -694,6 +726,7 @@ html[dir="rtl"] .eyebrow {
   .footer-grid,
   .value-list,
   .resource-grid,
+  .team-grid,
   .stats-strip,
   .hero-badges {
     grid-template-columns: 1fr;
