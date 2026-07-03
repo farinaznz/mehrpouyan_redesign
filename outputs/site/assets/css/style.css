@@ -461,33 +461,36 @@ html[dir="rtl"] .eyebrow {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: .85rem;
 }
 
 .team-card {
   overflow: hidden;
   background: var(--white);
   border: 1px solid rgba(34, 92, 75, .12);
-  border-radius: var(--radius);
-  box-shadow: 0 12px 30px rgba(23, 63, 53, .07);
+  border-radius: 10px;
+  box-shadow: 0 8px 22px rgba(23, 63, 53, .055);
 }
 
 .team-card img {
   display: block;
   width: 100%;
-  aspect-ratio: 1;
+  height: 128px;
   object-fit: cover;
 }
 
 .team-card h3 {
-  margin: 1rem 1rem .25rem;
+  margin: .75rem .8rem .2rem;
+  font-size: 1rem;
+  line-height: 1.35;
 }
 
 .team-card p {
-  margin: 0 1rem 1.1rem;
+  margin: 0 .8rem .85rem;
   color: var(--ink-500);
-  font-size: .92rem;
+  font-size: .82rem;
+  line-height: 1.55;
 }
 
 .value-list {
@@ -689,9 +692,12 @@ html[dir="rtl"] .eyebrow {
   .grid--4,
   .footer-grid,
   .value-list,
-  .team-grid,
   .stats-strip {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .hero-grid {
@@ -726,10 +732,17 @@ html[dir="rtl"] .eyebrow {
   .footer-grid,
   .value-list,
   .resource-grid,
-  .team-grid,
   .stats-strip,
   .hero-badges {
     grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .team-card img {
+    height: 116px;
   }
 
   .hero {
@@ -750,5 +763,11 @@ html[dir="rtl"] .eyebrow {
 
   .btn {
     width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .team-grid {
+    grid-template-columns: 1fr;
   }
 }
