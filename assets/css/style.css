@@ -433,10 +433,15 @@ html[dir="rtl"] .eyebrow {
   margin-bottom: .25rem;
 }
 
-.brochure-panel {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.resource-card {
+  display: grid;
+  align-content: space-between;
   gap: 1.5rem;
   padding: clamp(1.35rem, 3vw, 2rem);
   background: var(--white);
@@ -445,11 +450,11 @@ html[dir="rtl"] .eyebrow {
   box-shadow: 0 12px 30px rgba(23, 63, 53, .07);
 }
 
-.brochure-panel h2 {
+.resource-card h2 {
   margin-bottom: .35rem;
 }
 
-.brochure-panel p {
+.resource-card p {
   max-width: 62ch;
   margin-bottom: 0;
 }
@@ -688,6 +693,7 @@ html[dir="rtl"] .eyebrow {
   .grid--4,
   .footer-grid,
   .value-list,
+  .resource-grid,
   .stats-strip,
   .hero-badges {
     grid-template-columns: 1fr;
@@ -703,7 +709,7 @@ html[dir="rtl"] .eyebrow {
   }
 
   .cta-band,
-  .brochure-panel,
+  .resource-card,
   .footer-bottom {
     align-items: stretch;
     flex-direction: column;
