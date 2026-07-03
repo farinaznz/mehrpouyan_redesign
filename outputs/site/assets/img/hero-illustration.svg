@@ -1,0 +1,61 @@
+<svg viewBox="0 0 600 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FBEFD1"/>
+      <stop offset="100%" stop-color="#E6B84F"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="470" cy="95" r="62" fill="url(#sun)" opacity="0.9"/>
+
+  <!-- rolling hills -->
+  <path d="M0 380c80-40 160-40 240-10s160 30 240 0 90-30 120-10v190H0Z" fill="#E4EEE3"/>
+  <path d="M0 430c100-30 200-10 300 10s200 0 300-30v160H0Z" fill="#8FB596" opacity=".55"/>
+
+  <!-- tree trunk -->
+  <rect x="288" y="280" width="24" height="140" rx="8" fill="#2E4F3B"/>
+
+  <!-- leaf clusters -->
+  <circle cx="300" cy="230" r="92" fill="#2E4F3B"/>
+  <circle cx="230" cy="260" r="62" fill="#46734F"/>
+  <circle cx="370" cy="260" r="62" fill="#46734F"/>
+  <circle cx="300" cy="180" r="58" fill="#8FB596"/>
+
+  <!-- abstract leaves / fruit dots -->
+  <circle cx="255" cy="215" r="7" fill="#E6B84F"/>
+  <circle cx="345" cy="225" r="7" fill="#D9824B"/>
+  <circle cx="300" cy="160" r="7" fill="#FBEFD1"/>
+  <circle cx="270" cy="270" r="6" fill="#D9824B"/>
+  <circle cx="330" cy="280" r="6" fill="#E6B84F"/>
+
+  <!-- ground line -->
+  <path d="M40 470c160-30 360-30 520 0" stroke="#46734F" stroke-width="3" stroke-linecap="round" fill="none" opacity=".5"/>
+
+  <!-- abstract people: woman + two children gathered, simple coherent silhouettes -->
+  <g>
+    <ellipse cx="150" cy="440" rx="22" ry="30" fill="#D9824B"/>
+    <circle cx="150" cy="398" r="16" fill="#2E4F3B"/>
+  </g>
+  <g>
+    <ellipse cx="200" cy="455" rx="14" ry="20" fill="#E6B84F"/>
+    <circle cx="200" cy="427" r="11" fill="#2E4F3B"/>
+  </g>
+  <g>
+    <ellipse cx="115" cy="458" rx="13" ry="18" fill="#46734F"/>
+    <circle cx="115" cy="432" r="10" fill="#2E4F3B"/>
+  </g>
+
+  <g>
+    <ellipse cx="430" cy="450" rx="16" ry="22" fill="#46734F"/>
+    <circle cx="430" cy="420" r="12" fill="#2E4F3B"/>
+  </g>
+  <g>
+    <ellipse cx="465" cy="440" rx="20" ry="28" fill="#D9824B"/>
+    <circle cx="465" cy="400" r="15" fill="#2E4F3B"/>
+  </g>
+
+  <!-- floating dots / sparkle -->
+  <circle cx="90" cy="120" r="5" fill="#D9824B" opacity=".7"/>
+  <circle cx="520" cy="220" r="6" fill="#8FB596" opacity=".8"/>
+  <circle cx="60" cy="260" r="4" fill="#E6B84F" opacity=".8"/>
+</svg>
