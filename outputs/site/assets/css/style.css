@@ -459,22 +459,6 @@ html[dir="rtl"] .eyebrow {
   margin-bottom: 0;
 }
 
-.resource-actions {
-  display: grid;
-  gap: .65rem;
-  justify-items: start;
-}
-
-.resource-source {
-  color: var(--ink-500);
-  font-size: .86rem;
-  font-weight: 800;
-}
-
-.resource-source:hover {
-  color: var(--terracotta-500);
-}
-
 .doc-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
